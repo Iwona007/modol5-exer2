@@ -11,7 +11,8 @@ Technologies:
 #####
 Gui:
 Thymeleaf
-[App_image](src/main/resources/img/WeatherApi.png)
+
+![App image](src/main/resources/img/WeatherApi.png)
 
 
 
