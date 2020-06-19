@@ -14,24 +14,24 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/weatherCity")
 public class WeatherController {
 
-    private WeatherService weatherService;
+  private WeatherService weatherService;
 
-    @Autowired
-    public WeatherController(WeatherService weatherService) {
-        this.weatherService = weatherService;
-    }
+  @Autowired
+  public WeatherController(WeatherService weatherService) {
+    this.weatherService = weatherService;
+  }
 
-    @GetMapping
-    public String getWeather(Model model) {
-        model.addAttribute("weatherCity", weatherService.getWeatherInfo());
-        model.addAttribute("iconForWeather", weatherService.getImage());
-        model.addAttribute("city", new WeatherService());
-        return "weather";
-    }
+  @GetMapping
+  public String getWeather(Model model) {
+    model.addAttribute("weatherCity", weatherService.getWeatherInfo());
+    model.addAttribute("iconForWeather", weatherService.getImage());
+    model.addAttribute("city", new WeatherService());
+    return "weather";
+  }
 
-    @PostMapping("/city")
-    public String chooseCity(@RequestParam String city){
-        weatherService.setCity(city);
-        return "redirect:/weatherCity";
-    }
+  @PostMapping("/city")
+   public String chooseCity(@RequestParam String city) {
+    weatherService.setCity(city);
+    return "redirect:/weatherCity";
+  }
 }
