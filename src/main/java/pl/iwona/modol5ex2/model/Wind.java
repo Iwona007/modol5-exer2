@@ -1,4 +1,5 @@
-package iwona.pl.modol5ex2.model;
+package pl.iwona.modol5ex2.model;
+
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
@@ -11,31 +12,44 @@ import java.util.Map;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "all"
+        "speed",
+        "deg"
 })
-public class Clouds {
-
-  public Clouds(Integer all, Map<String, Object> additionalProperties) {
-    this.all = all;
+public class Wind {
+  public Wind(Double speed, Integer deg, Map<String, Object> additionalProperties) {
+    this.speed = speed;
+    this.deg = deg;
     this.additionalProperties = additionalProperties;
   }
 
-  public Clouds() {
+  public Wind() {
   }
 
-  @JsonProperty("all")
-  private Integer all;
+  @JsonProperty("speed")
+  private Double speed;
+  @JsonProperty("deg")
+  private Integer deg;
   @JsonIgnore
   private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-  @JsonProperty("all")
-  public Integer getAll() {
-    return all;
+  @JsonProperty("speed")
+  public Double getSpeed() {
+    return speed;
   }
 
-  @JsonProperty("all")
-  public void setAll(Integer all) {
-    this.all = all;
+  @JsonProperty("speed")
+  public void setSpeed(Double speed) {
+    this.speed = speed;
+  }
+
+  @JsonProperty("deg")
+  public Integer getDeg() {
+    return deg;
+  }
+
+  @JsonProperty("deg")
+  public void setDeg(Integer deg) {
+    this.deg = deg;
   }
 
   @JsonAnyGetter
@@ -50,9 +64,10 @@ public class Clouds {
 
   @Override
   public String toString() {
-    return "Clouds{"
-              +  "all=" + all
-              +  ", additionalProperties=" + additionalProperties
-              +  '}';
+    return "Wind{"
+               + "speed=" + speed
+               + ", deg=" + deg
+               + ", additionalProperties=" + additionalProperties
+               + '}';
   }
 }

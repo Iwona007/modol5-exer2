@@ -1,4 +1,4 @@
-package iwona.pl.modol5ex2.model;
+package pl.iwona.modol5ex2.model;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;

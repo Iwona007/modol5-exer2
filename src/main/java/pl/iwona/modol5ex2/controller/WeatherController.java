@@ -1,7 +1,7 @@
-package iwona.pl.modol5ex2.controller;
+package pl.iwona.modol5ex2.controller;
 
 
-import iwona.pl.modol5ex2.service.WeatherService;
+import pl.iwona.modol5ex2.service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

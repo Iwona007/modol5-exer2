@@ -1,4 +1,4 @@
-package iwona.pl.modol5ex2;
+package pl.iwona.modol5ex2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

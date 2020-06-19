@@ -1,7 +1,7 @@
-package iwona.pl.modol5ex2.service;
+package pl.iwona.modol5ex2.service;
 
 
-import iwona.pl.modol5ex2.model.WeatherFirst;
+import pl.iwona.modol5ex2.model.WeatherFirst;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
