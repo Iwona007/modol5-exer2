@@ -1,6 +1,8 @@
 package pl.iwona.modol5ex2.service;
 
 
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
 import pl.iwona.modol5ex2.model.WeatherFirst;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -14,6 +16,7 @@ public class WeatherService {
   public final static String NEW_URL = "&appid=" + API_KEY;
   public final static String ICON_URL = "http://openweathermap.org/img/wn/";
 
+  @EventListener(ApplicationReadyEvent.class)
   public WeatherFirst getWeatherInfo() {
     RestTemplate restTemplate = new RestTemplate();
     WeatherFirst weather = restTemplate

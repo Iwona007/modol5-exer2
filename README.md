@@ -12,7 +12,8 @@ Technologies:
 Gui:
 Thymeleaf
 
-
-
-
+Weather for Wrocław
+![snapshot](https://github.com/Iwona007/modol5-exer2/blob/feature1/snapshot/Weather-frontend.PNG)
+Weather for different city f.e.: London
+![snapshot](https://github.com/Iwona007/modol5-exer2/blob/feature1/snapshot/WeatherForLondon.PNG)
 
