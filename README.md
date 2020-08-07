@@ -13,6 +13,7 @@ Gui:
 Thymeleaf
 
 
+![snapshot](https://github.com/Iwona007/modol5-exer2/blob/feature1/snapshot/Weather-frontend.PNG)
 
-
+![snapshot](https://github.com/Iwona007/modol5-exer2/blob/feature1/snapshot/WeatherForLondon.PNG)
 
